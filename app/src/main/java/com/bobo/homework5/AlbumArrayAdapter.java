@@ -36,6 +36,10 @@ public class AlbumArrayAdapter extends ArrayAdapter<AlbumItem> {
         tv_name.setText(item.name);
         ImageView iv = (ImageView)itemlayout.findViewById(R.id.itemiv);
         iv.setImageResource(item.imgid);
+        TextView tv_name2 = (TextView)itemlayout.findViewById(R.id.itemtv2);
+        tv_name2.setText(item.name2);
+        ImageView iv2 = (ImageView)itemlayout.findViewById(R.id.itemiv2);
+        iv2.setImageResource(item.imgid2);
         return itemlayout;
     }
 }
